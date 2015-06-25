@@ -1,0 +1,20 @@
+{
+    "version": "0.2.1",
+    "name": "com.wordsbaking.cordova.tts",
+    "cordova_name": "TTS",
+    "description": "Cordova Text-to-Speech Plugin",
+    "license": "MIT",
+    "repo": "https://github.com/vilic/cordova-plugin-tts.git",
+    "issue": "https://github.com/vilic/cordova-plugin-tts/issues",
+    "keywords": [
+        "cordova",
+        "tts",
+        "text-to-speech"
+    ],
+    "platforms": [
+        "ios",
+        "wp8",
+        "android"
+    ],
+    "engines": []
+}

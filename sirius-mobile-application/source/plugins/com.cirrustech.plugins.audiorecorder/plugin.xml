@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.cirrustech.plugins.audiorecorder"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        version="0.0.1">
+
+  <name>AudioRecorder</name>
+
+  <description>
+    A plugin for recoring a piece of audio, obviously
+  </description>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <js-module src="www/AudioRecorder.js" name="AudioRecorder">
+    <clobbers target="window.plugins.audiorecorder" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="AudioRecorder">
+        <param name="android-package" value="com.cirrustech.plugins.AudioRecorder" />
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+      <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+      <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+      <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+      <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    </config-file>
+
+    <source-file src="src/android/com/cirrustech/plugins/AudioRecorder.java" target-dir="src/com/cirrustech/plugins"/>
+  </platform>
+
+</plugin>
