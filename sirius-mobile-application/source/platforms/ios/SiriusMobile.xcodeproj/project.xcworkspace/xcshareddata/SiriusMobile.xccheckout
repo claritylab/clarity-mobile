@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E3EF6298-FA5D-4B0F-A0D3-F3B51A1769C1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SiriusMobile</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>3C1A774FFBF0291FEE892E1B0E83BD5912DEDDE9</key>
 		<string>github.com:claritylab/clarity-mobile.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>sirius-mobile-application/source/platforms/ios/SiriusMobile.xcodeproj/project.xcworkspace</string>
+	<string>sirius-mobile-application/source/platforms/ios/SiriusMobile.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3C1A774FFBF0291FEE892E1B0E83BD5912DEDDE9</key>

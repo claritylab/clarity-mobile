@@ -400,8 +400,8 @@ function getAddress(port, destination) {
 
 function processResponse(data) {
     if(data) {
-        data += "<br><button class='btn-sm' id='resend'>Resend</button>"
-        updateResponseDiv(data);
+        msg = data + "<br><button class='btn-sm' id='resend'>Resend</button>"
+        updateResponseDiv(msg);
         document.getElementById("resend").addEventListener("click",askServer);
         TTS.speak({
             text: String(data),
