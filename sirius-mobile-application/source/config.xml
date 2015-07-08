@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mobile.sirius" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>SiriusMobile</name>
+    <description>
+        
+    </description>
+    <author email="claritylab.umich@gmail.com" href="http://sirius.clarity-lab.org/">
+        Clarity Lab Sirius Project
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="Orientation" value="portrait" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon src="www/img/sirius_icon.png" />
+        <splash src="www/img/splash/clarity-splash-hdpi-black.png" density="land-hdpi"/>
+        <splash src="www/img/splash/clarity-splash-ldpi-black.png" density="land-ldpi"/>
+        <splash src="www/img/splash/clarity-splash-mdpi-black.png" density="land-mdpi"/>
+        <splash src="www/img/splash/clarity-splash-xhdpi-black.png" density="land-xhdpi"/>
+        <splash src="www/img/splash/clarity-splash-hdpi-black.png" density="port-hdpi"/>
+        <splash src="www/img/splash/clarity-splash-ldpi-black.png" density="port-ldpi"/>
+        <splash src="www/img/splash/clarity-splash-mdpi-black.png" density="port-mdpi"/>
+        <splash src="www/img/splash/clarity-splash-xhdpi-black.png" density="port-xhdpi"/>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <icon src="www/img/sirius_icon.png" />
+        <splash src="www/img/splash/clarity-splash-320x480-black.png" width="320" height="480"/>
+        <splash src="www/img/splash/clarity-splash-640x960-black.png" width="640" height="960"/>
+        <splash src="www/img/splash/clarity-splash-768x1024-black.png" width="768" height="1024"/>
+        <splash src="www/img/splash/clarity-splash1536X2048-black.png" width="1536" height="2048"/>
+        <splash src="www/img/splash/logo-gray.png" width="1024" height="768"/>
+        <splash src="www/img/splash/logo-gray.png" width="2048" height="1536"/>
+        <splash src="www/img/splash/clarity-splash-640x960-black.png" width="640" height="1136"/>
+        <splash src="www/img/splash/clarity-splash-768x1024-black.png" width="750" height="1334"/>
+        <splash src="www/img/splash/logo-gray.png" width="1242" height="2208"/>
+        <splash src="www/img/splash/logo-gray.png" width="2208" height="1242"/>
+    </platform>
+</widget>
