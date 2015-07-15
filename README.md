@@ -1,2 +1,2 @@
 # clarity-mobile
-Mobile applications developed for ClarityEco based applications
+Mobile applications developed for [clarityeco](https://github.com/claritylab/clarityeco) based applications
