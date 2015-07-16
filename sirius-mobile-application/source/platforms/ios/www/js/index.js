@@ -138,7 +138,7 @@ function captureImageSuccess(mediaFiles) {
 
 function processImage(temp) {
     $('#image_file').empty();
-    $('#image_file').append("<canvas id='image_viewer' width='100' height='100'> </canvas> <br>");
+    $('#image_file').append("<canvas id='image_viewer' width='150' height='150'> </canvas> <br>");
 
     var tmpImage = new Image();
     tmpImage.onload = function() {
@@ -146,7 +146,7 @@ function processImage(temp) {
         var ctx = canvas.getContext('2d');
         //draw image, anchor at (0,0) with size xi, yi into canvas anchor at (0,0) within xc, yc
         ctx.drawImage(tmpImage, 0, 0, tmpImage.width, tmpImage.height,
-                                0, 0, 100, 100);
+                                0, 0, 150, 150);
         encodedImageData = canvas.toDataURL("image/jpeg", 1); //jpeg, quality 0 -> 1
         console.log(encodedImageData);
     }
