@@ -14,3 +14,7 @@ To run on Android
 2. Open the [Android Folder](platforms/android) within Studio
 3. Plug in Android Device
 4. Run
+
+
+
+Written by Tim Wurman
