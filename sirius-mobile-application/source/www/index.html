@@ -1,21 +1,9 @@
 <!DOCTYPE html>
 <!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
+ Sirius Mobile Application
+ Developed with Apache Cordova and Apache Thrift
+ More info at http://sirius.clarity-lab.org/
+ Written by Tim Wurman
 -->
 <html>
     <head>
@@ -36,14 +24,13 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Sirius Mobile</title>
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8" src="json2.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
     </head>
     <body>
         <div class="app">
 
             <div id="ip_info">
-                <label for="ip">IP: </label>
+                <label for="ip">Host: </label>
                 <input type="text" id="ip" name="ip" size="20" onchange="updateDefaults(this.id, this.value)" /> <br>
                 <label for="port">Port: </label>
                 <input type="text" id="port" name="port" size="5" onchange="updateDefaults(this.id, this.value)" /> 
@@ -54,7 +41,7 @@
             <div id="textMode" style="display:none">
                 <textarea id="question" rows="3" placeholder="Type your question" onchange="updateText(this.value)"></textarea>
                 <br>
-                <button class="btn" id="askServer">Ask Sirius</button>
+                <button class="btn" id="askSirius">Ask Sirius</button>
             </div>
             
             <br>
@@ -71,14 +58,16 @@
             <br> <br>
         </div>
 
-        <!-- nodejs communication -->
-        <script src="gen-js/FileTransferSvc.js" type="text/javascript"></script>
-        <script src="gen-js/filetransfer_svc_types.js" type="text/javascript"></script>
         
-
+        <!-- Thrift Javascript -->
         <script type="text/javascript" src="js/thrift/thrift.js"></script>
-        <script type="text/javascript" src="js/thrift/commandcenter_types.js"></script>
-        <script type="text/javascript" src="js/thrift/CommandCenter.js"></script>
+        <script type="text/javascript" src="js/thrift/gen-js/IPAService.js"></script>
+        <script type="text/javascript" src="js/thrift/gen-js/SchedulerService.js"></script>
+        <script type="text/javascript" src="js/thrift/gen-js/types_types.js"></script>
+        <script type="text/javascript" src="js/thrift/gen-js/service_types.js"></script>
+        <!-- Mobile App Javascript -->
+        <script type="text/javascript" src="js/utilities.js"></script>
+        <script type="text/javascript" src="js/query.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         
     </body>
